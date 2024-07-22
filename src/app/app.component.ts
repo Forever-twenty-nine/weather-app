@@ -6,8 +6,6 @@ import { WeatherComponent } from './weather/weather.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: true,
-  imports: [WeatherComponent],
   providers: [WeatherService],
   styleUrls: ['./app.component.css']
 })
