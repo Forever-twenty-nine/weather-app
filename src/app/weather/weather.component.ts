@@ -3,6 +3,7 @@ import { WeatherData } from '../Models/weather.model';
 
 @Component({
   selector: 'app-weather',
+  standalone: true,
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css'],
 })

@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { WeatherData } from './Models/weather.model';
 import { WeatherService } from './service/weather.service';
+import { WeatherComponent } from './weather/weather.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  standalone: true,
+  imports: [WeatherComponent],
+  providers: [WeatherService],
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {

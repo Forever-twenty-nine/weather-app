@@ -19,6 +19,7 @@
       <p>{{ weatherData?.name }}</p>
     </div>
   </div>
+  
   <div class="weather" *ngIf="weatherData">
     <i [class]="getWeatherIconClass(weatherData.description)"></i>
     <div>
@@ -43,4 +44,5 @@
       <p class="title">Humedad</p>
     </li>
   </ul>
+  
 </div>
